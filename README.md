@@ -45,4 +45,4 @@
 Модуль выводит только одно число в следующей разметке:
 
 ```html
-<div class="increment">3579451</div>
+<div class="increment">3 579 451</div>
