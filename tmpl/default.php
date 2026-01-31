@@ -41,4 +41,5 @@ $periodsPassed = $diffSeconds >= 0 ? (int) floor($diffSeconds / $periodSeconds) 
 
 $result = $startNumber + ($periodsPassed * $increment);
 
-echo '<div class="increment">' . $result . '</div>';
+$formatted = number_format($result, 0, '', ' ');
+echo '<div class="increment">' . $formatted . '</div>';
