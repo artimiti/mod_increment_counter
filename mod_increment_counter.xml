@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" client="site" method="upgrade">
+    <name>Increment Counter</name>
+    <author>artimiti</author>
+    <version>0.1.0</version>
+    <description>Модуль с автоинкрементом числа по секундам</description>
+    <namespace path="src">Module\Site\ModIncrementCounter</namespace>
+    <files>
+        <filename module="mod_increment_counter">mod_increment_counter.php</filename>
+        <folder>tmpl</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="start_number"
+                    type="number"
+                    label="Стартовое число"
+                    required="true"
+                />
+                <field
+                    name="increment"
+                    type="number"
+                    label="Инкремент"
+                    required="true"
+                />
+                <field
+                    name="period_expr"
+                    type="text"
+                    label="Период (выражение в секундах, например: 60*60*24*3)"
+                    description="Можно использовать *, +, скобки и числа. Только безопасные выражения!"
+                    required="true"
+                />
+                <field
+                    name="start_date"
+                    type="calendar"
+                    label="Дата начала отсчёта"
+                    format="%Y-%m-%d"
+                    filter="user_utc"
+                    required="true"
+                />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
