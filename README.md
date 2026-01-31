@@ -1,6 +1,6 @@
 # Increment Counter — модуль для Joomla
 Динамический счётчик, который автоматически увеличивает заданное число через указанные промежутки времени.
-![Пример работы модуля](https://raw.githubusercontent.com/artimiti/mod_work_status/main/browser_X6YhrYm7pv.png)
+![Пример работы модуля](https://raw.githubusercontent.com/artimiti/mod_increment_counter/main/browser_X6YhrYm7pv.png)
 
 ## 🔧 Возможности
 
